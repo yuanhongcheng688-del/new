@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SkySprint 联机小游戏</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>SkySprint</h1>
+        <p>在 30 秒内疯狂点击加速，与你的好友冲刺高分！</p>
+      </header>
+      <section class="game-panel">
+        <div class="hud">
+          <div id="status" class="status status-idle">正在连接服务器...</div>
+          <div class="timer">剩余时间：<span id="timer">--</span>s</div>
+        </div>
+        <div class="runway">
+          <div class="plane" id="plane">✈️</div>
+          <button id="boost" disabled>点我加速</button>
+        </div>
+      </section>
+      <section class="scoreboard">
+        <h2>排行榜</h2>
+        <ul id="scores"></ul>
+      </section>
+      <section class="tips">
+        <h3>玩法说明</h3>
+        <ol>
+          <li>打开页面自动连接到服务器，获得一个专属飞行员编号。</li>
+          <li>点击“点我加速”按钮即可为自己的喷气机加速并增加 1 分。</li>
+          <li>排行榜会实时展示所有在线飞行员的分数，刷新页面即可重新开始。</li>
+        </ol>
+      </section>
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
